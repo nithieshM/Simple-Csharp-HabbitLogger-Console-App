@@ -3,7 +3,7 @@ using Microsoft.Data.Sqlite;
 
 namespace Habbit_Tracker;
 
-internal static class Read
+internal static class Read  
 {
     internal static void GetAllRecords()
     {

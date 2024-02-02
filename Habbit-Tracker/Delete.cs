@@ -24,12 +24,10 @@ public class Delete
                 Console.WriteLine($"The specified record {recordId} doesnt exist.");
                 DeleteEntry();
             }
-
             connection.Close();
         }
         
-        Console.WriteLine($"The specified recordId {recordId} was successfully deleted.");
-        
+        Console.WriteLine($"The specified recordId {recordId} was successfully deleted.")
         Program.getUserInput();
     }
 }
