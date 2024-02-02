@@ -26,8 +26,8 @@ public class Delete
             }
             connection.Close();
         }
-        
-        Console.WriteLine($"The specified recordId {recordId} was successfully deleted.")
+
+        Console.WriteLine($"The specified recordId {recordId} was successfully deleted.");
         Program.getUserInput();
     }
 }
