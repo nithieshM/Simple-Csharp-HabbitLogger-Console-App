@@ -10,7 +10,7 @@ public class Insert
         string Date = GetDateInput();
 
         int Quantity = Numberinput("Enter the number of glasses, no floating point or decimals allowed.");
-        
+
         using (var connection = new SqliteConnection(Program.connectionString))
         {
             connection.Open();

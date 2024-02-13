@@ -8,7 +8,7 @@ public class Delete
     {
         Console.Clear();
         Read.GetAllRecords();
-        
+
         var recordId = Insert.Numberinput("Enter the Id you want to delete. Press 0 to return to main menu.");
 
         using (var connection = new SqliteConnection(Program.connectionString))
@@ -24,6 +24,7 @@ public class Delete
                 Console.WriteLine($"The specified record {recordId} doesnt exist.");
                 DeleteEntry();
             }
+
             connection.Close();
         }
 

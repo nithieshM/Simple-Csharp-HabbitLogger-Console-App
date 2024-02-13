@@ -1,4 +1,5 @@
 ﻿namespace Habbit_Tracker;
+
 using Microsoft.Data.Sqlite;
 
 class Program
@@ -21,6 +22,7 @@ class Program
             tableCmd.ExecuteNonQuery();
             connection.Close();
         }
+
         getUserInput();
     }
 
@@ -30,7 +32,7 @@ class Program
 
         bool closeApp = false;
 
-       while (closeApp == false)
+        while (closeApp == false)
         {
             Console.WriteLine("MAIN MENU" +
                               "\n\n What would you like to do?" +
@@ -76,4 +78,3 @@ class Program
         }
     }
 }
-

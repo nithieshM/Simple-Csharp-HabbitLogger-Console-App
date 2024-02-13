@@ -3,7 +3,7 @@ using Microsoft.Data.Sqlite;
 
 namespace Habbit_Tracker;
 
-internal static class Read  
+internal static class Read
 {
     internal static void GetAllRecords()
     {
@@ -36,11 +36,13 @@ internal static class Read
             {
                 Console.WriteLine("No Rows found. Add rows before using this command.");
             }
+
             connection.Close();
 
             foreach (var VARIABLE in tableData)
             {
-                Console.WriteLine($"{VARIABLE.Id} - {VARIABLE.Date.ToString("dd-MM-yyyy")} - Quantity: {VARIABLE.Quantity}");
+                Console.WriteLine(
+                    $"{VARIABLE.Id} - {VARIABLE.Date.ToString("dd-MM-yyyy")} - Quantity: {VARIABLE.Quantity}");
             }
         }
     }
@@ -48,7 +50,7 @@ internal static class Read
 
 public class DrinkingWater
 {
-    public  int Id { get; set; }
-    public  DateTime Date { get; set; }
+    public int Id { get; set; }
+    public DateTime Date { get; set; }
     public int Quantity { get; set; }
 }
